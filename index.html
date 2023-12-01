@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Task Dashboard</title>
+</head>
+<body>
+    <!-- ============ nav =============-->
+    <div class="container">
+        <div class="nav">
+        <img src="imgs/logo.png" alt="h">
+            <ul>
+                <li>
+                    <a href="index.html">
+                    <span class="icon">                  
+                    <i class="fa-solid fa-list-check"></i>
+                   </span>
+                   <span class="title">Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                   <span class="icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                   </span>
+                   <span class="title">Calendar</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="plans.html">
+                   <span class="icon">
+                    <i class="fa-solid fa-rectangle-list"></i>                
+                   </span>
+                   <span class="title">Plans</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+     <!-- =============main============ -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============card========= -->
+        <div class="card">
+            <div>
+                <div class="hi">
+                 HI ! 
+                 <BR>
+                    READY TO ACHEIVE ?
+                 </div>
+                 <div class="pic">
+                    <IMG SRC="imgs/task.png" ALT=" PLAN">
+                 </div>
+            </div>
+        </div>
+
+        <!-- ===========task============  -->
+        <form id="task-form">
+          
+            <input 
+            type="text"
+            id="task-input"
+            placeholder=" What's In Your Thoughts Today ? "/>
+           
+            <input
+            type="submit"
+            id="task-submit"
+            value="Add Task" />
+            <h2> Tasks </h2>
+        </form>
+       
+        <div class="task-list">
+            <div class="tasks">
+                <div class="task">
+                     <!-- <div class="content"> 
+                        <input
+                        type="text"
+                        class="text"
+                        value="I'm Planning To Do..." readonly /> 
+                        </div> -->
+                         <div class="action"> 
+                     <button class="done" > <!-- <i class="fa-solid-fa-circle-check"></i> --> </button>  
+                     <button class="cancel" > <!-- <i class="fa-solid-fa-circle-xmark"></i> --> </button> 
+                        </div> 
+                  </div>  
+             </div>
+         </div>
+        </div>
+<script src="js/main.js"> </script>
+</body>
+</html>

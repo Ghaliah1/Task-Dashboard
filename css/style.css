@@ -1,0 +1,502 @@
+ /* ============= google fonts ================= */
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Open+Sans:wght@700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ================== global=================== */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+--purple:#674d75;
+--white:#ffffff;
+}
+
+body{
+    min-height:100vh;
+    overflow-x: hidden;
+}
+ /* nice scroll bar */
+ ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 50px;
+  }
+.container{
+    position: relative;
+    width:100%;
+}
+/* ====================nav==================== */
+.nav{
+    position:fixed;
+    width:300px;
+    height: 100%;
+    background-color: var(--purple);
+    border-left: 10px solid var(--purple);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.nav.active{
+    width: 142px;
+}
+.nav.active ul{
+    left:0px;
+    font-size: 17px;
+}
+.nav.active img{
+    width: 138px;
+    margin-left: -19px;
+}
+.nav img{
+    width: 108px;
+    margin-left: 59px;
+}
+.nav ul{
+    position: absolute;
+    top: 110px; 
+    left: 56px;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+}
+.nav ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 32px;
+    padding-bottom: 11px;
+}
+.nav ul li a{
+    position:relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.nav ul li:hover {
+    background-color: var(--white);
+}
+.nav ul li:hover a {
+color: var(--purple);
+}
+.nav ul li a .icon{
+    position:relative;
+    display:block;
+    min-width:60px;
+    height:60px;
+    line-height: 75px;
+    text-align:center;
+    font-size: 30px;
+}
+.nav ul li a .title{
+    position: relative;
+    display:block;
+    padding-top: 7px;
+    line-height:60px;
+    text-align:start;
+    white-space: nowrap;
+    height:60px;
+}
+.nav.active ul{
+    left: -22px;
+    font-size: 19px;
+    top: 138px;
+}
+.nav.active ul li a .title{
+     left: -8px;
+}
+.nav.active ul li a .icon {
+    left: 5px;
+    font-size: 25px;
+}
+ .nav.active img{
+    width: 118px;
+    margin-left: -8px;
+} 
+
+/* =================main==================== */
+.main{
+    position:absolute;
+    width:calc(100% - 300px);
+    left:300px;
+    background-color: var(--white);
+    transition: 0.5s;
+}
+.main.active{
+    width:calc(100% - 80px);
+    left:142px;
+}
+.topbar{
+    width:100%;
+    height:66px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.toggle{
+    position:relative;
+    top:0;
+    width:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor:pointer;
+    color:var(--purple);
+}
+/* ==================card==================== */
+
+.card{
+    /* position: relative; */
+     width: 40px;
+     padding: 84px;
+     display: grid;
+     min-width: 900px;
+     padding-left: 352px;
+ }
+ .card .hi {
+    position: relative;
+    background-color: var(--white);
+    padding: 23px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+    line-height: 2.5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--purple);
+    width: 538px;
+    text-align: center;
+    padding-left: 67px;
+}
+.pic img {
+    position: relative;
+    width: 173px;
+    left: 340px;
+    bottom: 140px;
+}
+/* ==================task==================== */
+#task-form{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+} 
+ input, button {
+    position: relative;
+    padding-right: 17px;
+    padding-left: 17px;
+    background-color: var(--white);
+    font-weight: bold;
+    font-size:1rem;
+    border: none;
+    color: var(--purple);
+    padding-bottom: 4px;
+ }
+input.text {
+    justify-content: space-between;
+}
+#task-input{
+    width: 100px;
+    flex: 0.35 1 0%;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right:1rem;
+    color:var(--purple);
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+    left: 352px;
+    bottom: 168px;
+}
+#task-input::placeholder{
+    color: var(--purple);
+}
+ #task-submit{
+    position: relative;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--purple);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    bottom: 169px;
+    left: 411px;
+    width: 106px;
+    padding: 1rem;
+    border:none;
+    box-shadow: 0.5 7px 25px rgba(0, 0, 0, 0.2);
+ }
+#task-submit:hover{
+    background-color: #855c99;
+}
+#task-form h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:var(--purple);
+    margin-top:-82px;
+    text-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    left: 84px;
+} 
+/* //content// */
+.task-list{
+   flex: 0.5 1 0%;
+   max-width: 411px;
+   width: 100%;
+   margin: 0 auto;
+   padding-left: 13px;
+   margin-top: -110px;
+   color: var(--purple);
+   border: none;
+}
+.task .content{
+    position: relative;
+    color:var(--purple);
+    font-size: 1rem;
+    width: 420px;
+    display: block;
+    transition: 0.4s;
+    border: none;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: -120px;
+}
+.tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.task-list .tasks .task .content .text{
+    position: relative;
+    color:var(--purple);
+    font-size: 1rem;
+    width: 313px;
+    display: block;
+    transition: 0.4s;
+    border: none;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: -142px;
+}
+.tasks .text .content .text{
+    color: var(--purple); 
+} 
+/* //buttons// */
+  .task .action{
+    display: flex;
+    margin:4px 48px;
+    position: relative;
+}
+.task .action button{
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 700;
+    width: 12px;
+    border: none;
+    color: var(--purple);
+    transition: 0.4s;
+    text-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    margin-top: -62px;
+    left: -15px;
+}
+.done{
+    margin-left: 325px;
+}
+.cancel{
+    margin-left: 51px;
+    padding-top: -47px;
+}
+.task .action button:hover{
+    color: #855c99;
+ }
+    .task-list .tasks .task .content .text:hover{
+    border-color: #674d75;
+}
+
+/* ===================responsive====================== */
+
+/* //1067px// */
+
+@media (max-width:1067px) {
+    .task .content{
+        margin-left: 20px;
+        position: relative;
+        width: 300px;
+    }
+}
+/* //991px// */
+ @media (max-width:991px) {
+    .task .content{
+        width: 289px;
+        margin-left: 109px;
+    } 
+    .task .action{
+        left: 24px;
+        margin: 4px 94px;
+    }
+    .card .hi {
+        width: 538px;
+    }
+    #task-input{
+        left: 391px;
+    }
+    #task-form h2 {
+        left: 84px;
+    }
+}
+/* //768px// */
+@media (max-width : 768px) {
+    .nav{
+        width: 209px;
+    }
+    .main{
+        left:223px;
+    }
+    .container .card{
+        padding-left: 247px;
+        padding: 70px;
+        width: 26px;
+    }
+    .card .hi{
+        width: 472px;
+        left: 193px;
+    }
+    .pic img{
+        width: 159px;
+        left: 492px;
+    }
+    #task-input{
+        left: 313px;
+        width: 292px;
+        flex:none;
+        margin-left: -39px;
+    }
+    #task-submit{
+        left:365px;
+    }
+    .task .content{
+        width: 293px;
+        margin-left: 84px;
+    }
+    .task .action {
+        left: 19px;
+    }
+}
+/* 
+//480px// */
+@media (max-width:480px) {
+    .nav ul li{
+        width: 128%;
+    }
+    .nav{
+    width: 100%;
+    left: -480px;
+    z-index: 10000;
+    }
+    .nav img{
+        margin-left: -1px;
+    }
+    .nav ul li a .icon{
+        padding-left: 21px;
+        min-width: 61px;
+    }
+    .main{
+        left: 3px;
+        color: var(--purple);
+    }
+    .container .card{
+        position: relative;
+        padding-left: 17px;
+        left: -200px;
+    }
+    .card .hi{
+        width:420px;
+        padding-left: 13px;
+    }
+    .pic img{
+        left: 446px;
+        bottom:129px;
+    }
+    #task-input{
+     left: 59px;
+    }
+    #task-submit{
+        padding: 0rem;
+        left:86px;
+        width:95px;
+    }
+    .task-list{
+        padding-left: 0px;
+        margin-right: 46px;
+    }
+    .task .content{
+        width: 292px;
+        margin-left: -3px;
+    }
+    .task .action{
+        margin: 4px -22px;
+    }
+    #task-form h2{
+        left:-204px
+    }
+    .task .action button{
+        padding-left: 0px;
+    }
+    nav {
+        width: 100%;
+        left: -100%;
+        z-index: 10000;
+    }
+    .nav.active{
+        width: 100%;
+        left:0
+    }
+    .nav.active ul{
+        left: 139px;
+        font-size: 22px;
+        top: 138px;
+    }
+    .nav.active ul li a .title{
+        left: 12px;
+    }
+    .nav.active ul li a .icon {
+        font-size: 30px;
+
+    }
+     .nav.active img{
+        width: 138px;
+        margin-left: 139px;
+    } 
+    .toggle{
+        z-index: 10001;
+    }
+    .main.active .toggle{
+    color: var(--white);
+    position: fixed;
+    right: 0;
+    left: initial;
+    margin-top: 20px;
+    }
+} 
