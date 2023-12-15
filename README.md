@@ -1,6 +1,7 @@
 <h2 text-align="center";> Task-Dashboard</h2>
 <img src="imgs/logo.png">
-<img url("(https://img.shields.io/badge/Make--everything--done-white)")>
+<img alt="Static Badge" src="https://img.shields.io/badge/Make--everything--done-white">
+
 
 This is an app to add your task and your events in the calendar ; to help orgnize your life 
 
