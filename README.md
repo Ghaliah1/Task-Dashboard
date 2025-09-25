@@ -13,8 +13,8 @@ A simple **task and calendar dashboard app** to organize daily activities and go
 
  <h2 style=" text-align=center";> Screenshots : </h2>
 
- <img src="imgs/screenshot1.png">  <br>
- <img src="imgs/screenshot2.png"> 
+ <img src="imgs/Screenshot1.png">  <br>
+ <img src="imgs/Screenshot2.png"> 
 
  <h2 style=" text-align=center";>Technologies Used : </h2>
 - HTML  <br>
