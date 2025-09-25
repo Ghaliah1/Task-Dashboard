@@ -11,7 +11,12 @@ A simple **task and calendar dashboard app** to organize daily activities and go
 - Clean and minimal interface <br>
 
 
+ <h2 style=" text-align=center";> Screenshots : </h2>
+
+ ![Dashboard Screenshot 1](imgs/screenshot1.png)  <br>
+![Dashboard Screenshot 2](imgs/screenshot2.png)  
+
  <h2 style=" text-align=center";>Technologies Used : </h2>
-- HTML  
-- CSS / SCSS  
-- JavaScript  
+- HTML  <br>
+- CSS / SCSS  <br>
+- JavaScript  <br>
