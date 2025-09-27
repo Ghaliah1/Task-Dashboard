@@ -1,5 +1,5 @@
 <h2 style=" text-align=center";> Task-Dashboard</h2>
-<img src="imgs/logo.png">
+
 
 A simple **task and calendar dashboard app** to organize daily activities and goals.  
 📌 [Live Demo](https://ghaliah1.github.io/Task-Dashboard/)  
